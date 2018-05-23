@@ -87,7 +87,8 @@ module Mengpaneel
         def streaming?
           return false unless defined?(ActionController::Live)
 
-          env["action_controller.instance"].class.included_modules.include?(ActionController::Live)
+#           env["action_controller.instance"].class.included_modules.include?(ActionController::Live)
+#           env["action_controller.instance"].class.included_modules.include?(ActionController::Live)
         end
     end
   end
